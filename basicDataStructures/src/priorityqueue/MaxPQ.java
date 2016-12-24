@@ -13,7 +13,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 	public boolean isEmpty(){
 		return N==0;
 	}
-	public Key delMax(){
+	/*public Key delMax(){
 		int max = 0;
 		for(int i=0;i<N;i++){
 			if(less(max, i)) {
@@ -22,14 +22,14 @@ public class MaxPQ<Key extends Comparable<Key>> {
 			MyUtil.exch(max,N-1);
 		}
 		return pq[--N];
-	}
+	}*/
 	private boolean less(int i,int j){
 		return pq[i].compareTo(pq[j]) < 0;
 	}
 	private void exch(int i,int j){
-		int swap = pq[i];
+		/*int swap = pq[i];
 		pq[i] = pq[j];
-		pq[j] = swap;	
+		pq[j] = swap;	*/
 	}
 	private void swim(int k){
 		while( k > 1 && less(k/2,k)){

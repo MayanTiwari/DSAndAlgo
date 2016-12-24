@@ -1,8 +1,8 @@
 package priorityqueue;
 
 abstract public class ST<Key,Value> {
-	public void ST(){
+	/*public void ST(){
 		
 	}
-	void put(Key key,Value val);
+	void put(Key key,Value val);*/
 }

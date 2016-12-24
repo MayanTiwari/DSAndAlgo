@@ -1,18 +1,14 @@
-package sorting;
-
-import java.util.Arrays;
-
+//package sorting;
+//import common.*;
 
 public class EntryPoint {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		System.out.println("Start");
-		//int[] a  = {4,6,3,1,5,2};
-		//SortClass sObject = new QuickSort();
-		//sObject.Sort(a);
-		//System.out.println(Arrays.toString(a));
-		
+		//StackImp<Integer> stack = new StackImp<>();
+		//boolean result =  stack.push(10);
+		System.out.println("End");
 	}
 
 }

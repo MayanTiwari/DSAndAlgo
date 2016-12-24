@@ -74,7 +74,7 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	}
 
 	private Node floor(Node x, Key key) {
-		Node x;
+		Node x1;
 		int cmp = key.compareTo(x.key);
 		if (cmp == 0)
 			return x;
@@ -106,7 +106,7 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	}
 
 	private int rank(Node x, Key key) {
-		if (x == null)
+		/*if (x == null)
 			return 0;
 		int cmp = key.compareTo(x.key);
 
@@ -115,7 +115,8 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		else if (cmp > 0)
 			return 1 + rank(x.right, key) + size(x.left);
 		else if (cmp == 0)
-			return size(x.left);
+			return size(x.left);*/
+		return 0;
 	}
 
 	public void delete(Key key) {
@@ -145,10 +146,10 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		return x;
 	}*/
 
-	public Iterable<Key> iterator() {
-		// Queue<Key> q = new Queue<Key>();
+	/*public Iterable<Key> iterator() {
+		Queue<Key> q = new Queue<Key>();
 
-	}
+	}*/
 
 	private void inorder(Node x, Queue<Key> q) {
 		if (x == null)
